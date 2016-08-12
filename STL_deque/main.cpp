@@ -47,6 +47,14 @@ int main(int argc, const char * argv[])
     deque1.erase(iterErase);
     PrintDeque(deque1);
 
+    cout << "deque1.size = " << deque1.size() << endl;
+    cout << "deque1.max_size = " << deque1.max_size() << endl;
+
+    deque1.pop_back();
+    PrintDeque(deque1);
+
+    deque1.pop_front();
+    PrintDeque(deque1);
 
 
 

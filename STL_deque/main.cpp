@@ -56,10 +56,22 @@ int main(int argc, const char * argv[])
     deque1.pop_front();
     PrintDeque(deque1);
 
+    // 交换两个deque
+    deque<int> dequeSwap;
+    dequeSwap.push_back(11);
+    dequeSwap.push_back(22);
+    dequeSwap.push_back(33);
 
+    cout << "deque1:" ;
+    PrintDeque(deque1);
+    cout << "dequeSwap:";
+    PrintDeque(dequeSwap);
 
-
-
+    deque1.swap(dequeSwap);
+    cout << "deque1:" ;
+    PrintDeque(deque1);
+    cout << "dequeSwap:";
+    PrintDeque(dequeSwap);
 
     cout << "deque是否为空：" << deque1.empty() << endl;
     deque1.clear();
@@ -80,13 +92,3 @@ void PrintDeque(deque<int> pDeque)
 
     cout << endl;
 }
-
-
-
-
-
-
-
-
-
-

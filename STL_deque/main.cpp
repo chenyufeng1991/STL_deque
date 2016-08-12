@@ -36,6 +36,27 @@ int main(int argc, const char * argv[])
     cout << "某位置的元素为：" << deque1.at(2) << endl;
     cout << "某位置的元素为：" << deque1[2] << endl;
 
+    // 使用迭代器插入或删除元素
+    deque<int>::iterator iterInsert = deque1.begin();
+    iterInsert = iterInsert + 2;
+    deque1.insert(iterInsert, 99);
+    PrintDeque(deque1);
+
+    deque<int>::iterator iterErase = deque1.begin();
+    iterErase = iterErase + 2;
+    deque1.erase(iterErase);
+    PrintDeque(deque1);
+
+
+
+
+
+
+
+    cout << "deque是否为空：" << deque1.empty() << endl;
+    deque1.clear();
+    cout << "deque是否为空：" << deque1.empty() << endl;
+    PrintDeque(deque1);
 
     return 0;
 }

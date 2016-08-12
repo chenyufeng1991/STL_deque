@@ -33,6 +33,8 @@ int main(int argc, const char * argv[])
     cout << "头部元素为：" << deque1.front() << endl;
     cout << "尾部元素为：" << deque1.back() << endl;
 
+    cout << "某位置的元素为：" << deque1.at(2) << endl;
+    cout << "某位置的元素为：" << deque1[2] << endl;
 
 
     return 0;
